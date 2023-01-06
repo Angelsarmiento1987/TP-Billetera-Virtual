@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+}
+body{
+    background-color: #0D0E0F;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C5FC6B;
+    height: 25vh;
+}
+.contHeader{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
