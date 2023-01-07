@@ -41,6 +41,7 @@ idDivGastos.insertAdjacentHTML("beforeend"/*este dato me da la ubicacion del ele
 <a href="#" class="iconoTacho"><i class="fa-regular fa-trash-can iconoEliminar"></i></a>
 
 </div>`) //con insertAdjacentHTML coloco el CONTENIDO HTML uno despues de otro sin que se superpongan como con innerhtml
-
+document.getElementById("idInputGasto").value = `` /*de esta forma retorno el value de los inputs a cero/null para que puedan ser editados y seguir sumando elementos sin que me figuren los anteriores en pantalla*/ 
+document.getElementById("idInputMonto").value = ``
 }
 
