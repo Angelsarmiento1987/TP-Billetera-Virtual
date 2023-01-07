@@ -103,6 +103,10 @@ header{
     color: #C5FC6B;
     font-size: 2rem;
 }
+.iconoAgregar:hover{
+    color: green;
+    
+}
 
 
 /*seccion Billetera CSS efectos FOCUS */
@@ -164,7 +168,60 @@ header{
 .iconoEliminar:hover{
     color: red;
 }
-.iconoAgregar:hover{
-    color: green;
-    
+
+/* CSS RESPONSIVE*/
+
+@media(max-width:430px){
+
+    /*responsive header///falta agregar los valores de ingreso y gastos*/
+    header{
+        border-radius: 20px;
+        margin: 0.5rem;
+    }
+.contHeader{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
 }
+.contDisponible{
+    text-align: center;
+}
+.contGastos{
+    display: none;
+}
+.contIngreso{
+    display: none;
+    }
+
+
+/*Responsive contenedores Billetera y Gastos*/
+
+    .contHero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contBilletera{
+        width: 95%;
+        height: 60vh;
+        border-radius: 20px;
+    }
+    .contGastosRealizados{
+        margin-top: 0.5rem;
+        width: 95%;
+        height: 60vh;
+        border-radius: 20px;
+
+    }
+
+
+
+
+
+
+}
+
+
