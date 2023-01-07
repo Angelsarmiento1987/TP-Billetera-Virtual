@@ -204,6 +204,8 @@ header{
     header{
         border-radius: 20px;
         margin: 0.5rem;
+        position: sticky;/*position sticky solo para responsive*/
+        top: 0px;
     }
 .contHeader{
     display: flex;

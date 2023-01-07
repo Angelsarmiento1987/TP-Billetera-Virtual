@@ -2,12 +2,14 @@
 let disponible = document.getElementById("disponible")
 let totalIngresos = document.getElementById("totalIngresos")
 let totalGastos = document.getElementById("totalGastos")
+let idDivGastos = document.getElementById("idDivGastos")
 
 
 let dinero = 0
 let monto = 0
 let gasto =``
 let gastosSumador = 0
+let sumX = 0
 
 
 
@@ -32,7 +34,12 @@ totalGastos.innerText = `$${gastosSumador}`
 if(dinero<0){
 disponible.style.color = `red`
 }
-
+sumX = sumX+1
+idDivGastos.innerHTML = `<div class="gasto" >
+<h3 class="gastoRealizado">${gasto}</h3>
+<h3 class="precio">${monto}</h3>
+<a href="#" class="iconoTacho"><i class="fa-regular fa-trash-can iconoEliminar"></i></a>
+</div>`
 
 }
 
