@@ -161,6 +161,7 @@ header{
     height:70vh;
     width: 48%;
     border-radius: 10px;
+   
 
 }
 .divGastos{
@@ -170,10 +171,10 @@ header{
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
-    overflow-y:  auto;
-    
-    
-  
+    overflow-y:  auto; 
+}
+.divGastos::-webkit-scrollbar{/*de esta forma oculto la barra de navegacion del contenedor divGastos en caso de los gastos excedan el contenedor y tengan q scrollearse*/
+    display: none;
 }
 .contGastosRealizados h2{
     font-size: 3rem;
