@@ -76,7 +76,7 @@ header{
     
 }
 .contGastoyMonto{
-    margin-top: 5rem;
+    margin-top: 15%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -205,12 +205,13 @@ header{
         align-items: center;
     }
     .contBilletera{
+        margin-top: 0.5rem;
         width: 95%;
         height: 50vh;
         border-radius: 20px;
     }
     .contGastosRealizados{
-        margin-top: 0.5rem;
+        margin-top: 1rem;
         width: 95%;
         height: 60vh;
         border-radius: 20px;
