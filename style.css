@@ -1,11 +1,15 @@
 *{
     margin: 0px;
+    font-family: Acme;
 }
 body{
-    background-color: #0D0E0F;
+    background-color: #0D0E0F; /*color del body*/
+
 }
-header{
-    display: flex;
+
+/*CSS del HEADER*/
+header{ 
+    display: flex; 
     justify-content: center;
     align-items: center;
     background-color: #C5FC6B;
@@ -16,4 +20,137 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 2rem;
+}
+.h1Disponible{
+    color: green;/*tiene q cambiar a rojo cuando el saldo disponible sea negativo ver si eso se hace con java script*/
+    text-shadow: 1px 1px #0D0E0F; /*SOMBRA SOBRE DINERO DISPONIBLE VER SI LO DEJO O NO*/
+}
+
+/*CSS seccion Hero (billetera + gastos)*/
+.hero{
+    display: flex;
+    justify-content: center;
+    height: 75%;
+}
+.contHero{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+   
+  
+}
+.contBilletera{
+    background-color: #131415;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:75vh;
+    width: 48%;
+   
+}
+.contBilletera h2{
+    font-size: 3rem;
+}
+
+/* CSS FORMULARIO SECTION BILLETERA*/
+
+.contFormu{ /*div contenedor de los inputs*/
+    margin-top: 1rem;
+    width:80%;
+    height: 50%;
+    
+    
+}
+
+.inputDinero{
+   width: 100%;
+   height: 4rem;
+    background-color: #1B1C1E;
+    border-radius: 10px;
+    border: 0px solid;
+    color: white;
+    
+}
+.contGastoyMonto{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inputGasto{
+    width: 40%;
+    height: 4rem;
+    background-color: #1B1C1E;
+    border-radius: 10px;
+    border: 0px solid;
+    color: white;
+
+}
+.inputMonto{
+    width: 40%;
+    height: 4rem;
+    background-color: #1B1C1E;
+    border-radius: 10px;
+    border: 0px solid;
+    color: white;
+}
+.iconoAgregar{
+    color: #C5FC6B;
+    font-size: 2rem;
+}
+
+
+/*seccion Billetera CSS efectos FOCUS */
+:focus{ /* uso Focus para cambiar el color del borde de los imputs al estar seleccionado*/
+  outline: 1px solid #C5FC6B; 
+  
+  
+}
+:focus::placeholder{ /*iluminacion del placeholder al hacer focus*/
+    color: #C5FC6B;
+}
+::placeholder{
+   padding-left: 1rem;
+   
+}
+
+/* CSS section Gastos Realizados*/
+
+.contGastosRealizados{
+    background-color: #131415;
+    color: white;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    flex-direction: column;
+    height:75vh;
+    width: 48%;
+
+}
+.divGastos{
+
+    width: 80%;
+    height:50% ;
+    display: flex;
+    margin-top: 1rem;
+  
+}
+.contGastosRealizados h2{
+    font-size: 3rem;
+}
+.gasto{
+
+  
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid silver;
+    
 }
