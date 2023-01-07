@@ -154,3 +154,17 @@ header{
     border-bottom: 1px solid silver;
     
 }
+.gastoRealizado{
+    
+    flex-basis: 70%;
+}
+.iconoEliminar{
+    color: #C5FC6B;
+}
+.iconoEliminar:hover{
+    color: red;
+}
+.iconoAgregar:hover{
+    color: green;
+    
+}
