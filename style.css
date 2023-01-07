@@ -69,9 +69,14 @@ header{
     
     
 }
+.contDinero{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 .inputDinero{
-   width: 100%;
+   width: 80%;
    height: 4rem;
     background-color: #1B1C1E;
     border-radius: 10px;
@@ -121,6 +126,13 @@ header{
     color: green;
     
 }
+.iconoDinero{
+    color: #C5FC6B;
+    font-size: 2rem;
+}
+.iconoDinero:hover{
+    color: green;
+}
 
 
 /*seccion Billetera CSS efectos FOCUS */
@@ -133,7 +145,7 @@ header{
     color: #C5FC6B;
 }
 ::placeholder{
-   padding-left: 1rem;
+   padding-left: 0px;
    
 }
 

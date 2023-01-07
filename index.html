@@ -14,11 +14,11 @@
         <div class="contHeader">
             <div class="contIngreso">
                 <p>Total Ingreso</p>
-                <h1>$10000</h1>
+                <h1 id="totalIngresos">$0.00</h1>
             </div>
             <div class="contGastos">
                 <p>Total Gastos</p>
-                <h1>$2000</h1>
+                <h1 id="totalGastos">$0.00</h1>
 
             </div>
             <div class="contDisponible">
@@ -35,12 +35,14 @@
                 <h2>Billetera App</h2>
                 <div class="contFormu">
                     <form action="">
-                        
-                        <input type="text" class="inputDinero" placeholder="Dinero Disponible" id="idInputDinero">
+                        <div class="contDinero">
+                            <input type="text" class="inputDinero" placeholder="Dinero Disponible" id="idInputDinero">
+                            <a href="#" class="etiqIconoDinero" onclick="haceClick()"><i class="fa-solid fa-sack-dollar iconoDinero"></i></a>
+                        </div>
                         <div class="contGastoyMonto">
-                            <input type="text" class="inputGasto" placeholder="Gasto">
-                            <input type="text" class="inputMonto" placeholder="Monto">
-                            <a href="#" class="etiqIconoAgregar" onclick="haceClick()"><i class="fa-solid fa-plus iconoAgregar"></i></a>
+                            <input type="text" class="inputGasto" placeholder="Gasto" id="idInputGasto">
+                            <input type="text" class="inputMonto" placeholder="Monto" id="idInputMonto">
+                            <a href="#" class="etiqIconoAgregar" onclick="agregarDinero()"><i class="fa-solid fa-plus iconoAgregar"></i></a>
 
                         </div>
                         
