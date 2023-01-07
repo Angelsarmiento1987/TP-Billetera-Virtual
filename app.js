@@ -9,7 +9,7 @@ let dinero = 0
 let monto = 0
 let gasto =``
 let gastosSumador = 0
-let sumX = 0
+let sumX = 1
 
 
 
@@ -35,11 +35,12 @@ if(dinero<0){
 disponible.style.color = `red`
 }
 sumX = sumX+1
-idDivGastos.innerHTML = `<div class="gasto" >
+idDivGastos.insertAdjacentHTML("beforeend"/*este dato me da la ubicacion del elemento (antes o posterior)*/,`<div class="gasto" id="idItemGasto">
 <h3 class="gastoRealizado">${gasto}</h3>
 <h3 class="precio">${monto}</h3>
 <a href="#" class="iconoTacho"><i class="fa-regular fa-trash-can iconoEliminar"></i></a>
-</div>`
+
+</div>`) //con insertAdjacentHTML coloco el CONTENIDO HTML uno despues de otro sin que se superpongan como con innerhtml
 
 }
 
