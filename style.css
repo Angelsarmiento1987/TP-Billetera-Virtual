@@ -206,7 +206,7 @@ header{
     }
     .contBilletera{
         width: 95%;
-        height: 60vh;
+        height: 50vh;
         border-radius: 20px;
     }
     .contGastosRealizados{
@@ -216,7 +216,16 @@ header{
         border-radius: 20px;
 
     }
-
+   
+    .inputDinero{
+        height: 2rem;
+    }
+    .inputGasto{
+        height: 2rem;
+    }
+    .inputMonto{
+        height: 2rem;
+    }
 
 
 
