@@ -77,6 +77,9 @@ header{
     border-radius: 10px;
     border: 0px solid;
     color: white;
+    text-align: center;
+    
+  
     
 }
 .contGastoyMonto{
@@ -93,6 +96,8 @@ header{
     border-radius: 10px;
     border: 0px solid;
     color: white;
+    text-align: center;
+    
 
 }
 .inputMonto{
@@ -102,6 +107,8 @@ header{
     border-radius: 10px;
     border: 0px solid;
     color: white;
+    text-align: center;
+    
 }
 .iconoAgregar{
     color: #C5FC6B;
