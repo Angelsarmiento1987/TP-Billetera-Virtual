@@ -11,6 +11,8 @@ let monto = 0
 let gasto =``
 let gastosSumador = 0
 let sumX = 1
+let restarString = ``
+let restar = 0
 
 
 
@@ -39,7 +41,7 @@ disponible.style.color = `red`
 }
 idDivGastos.insertAdjacentHTML("beforeend"/*este dato me da la ubicacion del elemento (antes o posterior)*/,`<div class="gasto" id="idItemGasto${sumX}"  >
 <h3 class="gastoRealizado">${gasto}</h3>
-<h3 class="precio">${monto}</h3>
+<h3 class="precio" id="idMontos${sumX}" >${monto}</h3>
 <a href="#" class="iconoTacho" id="idEliminarDiv" onclick="eliminarDIV(${sumX})"><i class="fa-regular fa-trash-can iconoEliminar"></i></a>
 
 </div>`) //con insertAdjacentHTML coloco el CONTENIDO HTML uno despues de otro sin que se superpongan como con innerhtml
@@ -55,9 +57,32 @@ sumX = sumX + 1 //sumador para incremento y recorrido de los divs
 
 /*FUNCION ELIMINAR DIV*/ 
 
-function eliminarDIV(a){
+function eliminarDIV(a){/*"a" recibe el valor de sumX enviado por onClick */
     console.log("se ejecuta la funcion al apretar tacho")
-    let variable = document.getElementById(`idItemGasto${a}`)
-    variable.remove()
-// con esta funcion guardo en variable el ID idItemGasto(con su respectivo indice que se lo da sumX para lograr identificar por separado cada div ) y el evento haceClik activa la funcion elimiinarDIV(aqui manda la variable sumX guardada para saber luego a que indice corresponde)
+
+    let idMontos = document.getElementById(`idMontos${a}`).innerHTML
+    restar = parseFloat(idMontos)
+    gastosSumador = gastosSumador - restar
+    dinero = dinero + restar
+    disponible.innerText=`$${dinero}`
+    totalGastos.innerText = `$${gastosSumador}` /*las operaciones con los valores las realizo antes de ejecutar la eliminacion del contenedor en esta funcion, ya que si el codigo estuviera despues lo tomaria como NULL*/
+
+
+
+
+    let elimino = document.getElementById(`idItemGasto${a}`)
+    elimino.remove();
+
+
+
+    
+
+
+
+
+/*con esta funcion guardo en variable el ID idItemGasto(con su respectivo indice que se lo da sumX para lograr identificar por separado cada div ) y el evento haceClik activa la funcion elimiinarDIV(aqui manda la variable sumX guardada para saber luego a que indice corresponde)*/
+
+
+
+
 }
