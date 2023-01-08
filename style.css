@@ -189,11 +189,14 @@ header{
     align-items: center;
     border-bottom: 1px solid silver;
     
+    
 }
 .gastoRealizado{
     
-    flex-basis: 70%;
+    flex-basis:70%;
 }
+
+
 .iconoEliminar{
     color: #C5FC6B;
 }

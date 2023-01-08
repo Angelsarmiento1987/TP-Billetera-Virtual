@@ -42,7 +42,7 @@ disponible.style.color = `red`
 }
 idDivGastos.insertAdjacentHTML("beforeend"/*este dato me da la ubicacion del elemento (antes o posterior)*/,`<div class="gasto" id="idItemGasto${sumX}"  >
 <h3 class="gastoRealizado">${gasto}</h3>
-<h3 class="precio" id="idMontos${sumX}" >${monto}</h3>
+<h3 class="precio" id="idMontos${sumX}" >$${monto}</h3>
 <a href="#" class="iconoTacho" id="idEliminarDiv" onclick="eliminarDIV(${sumX})"><i class="fa-regular fa-trash-can iconoEliminar"></i></a>
 
 </div>`) //con insertAdjacentHTML coloco el CONTENIDO HTML uno despues de otro sin que se superpongan como con innerhtml
@@ -65,7 +65,7 @@ sumX = sumX + 1 //sumador para incremento y recorrido de los divs
 function eliminarDIV(a){/*"a" recibe el valor de sumX enviado por onClick */
     console.log("se ejecuta la funcion al apretar tacho")
 
-    let idMontos = document.getElementById(`idMontos${a}`).innerHTML
+    let idMontos = document.getElementById(`idMontos${a}`).innerHTML.slice(1)
     restar = parseFloat(idMontos)
     gastosSumador = gastosSumador - restar
     dinero = dinero + restar
