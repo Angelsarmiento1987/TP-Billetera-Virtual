@@ -65,7 +65,7 @@ sumX = sumX + 1 //sumador para incremento y recorrido de los divs
 function eliminarDIV(a){/*"a" recibe el valor de sumX enviado por onClick */
     console.log("se ejecuta la funcion al apretar tacho")
 
-    let idMontos = document.getElementById(`idMontos${a}`).innerHTML.slice(1)
+    let idMontos = document.getElementById(`idMontos${a}`).innerHTML.slice(1)/*utilice slice para quitar el $ al guarda*/ 
     restar = parseFloat(idMontos)
     gastosSumador = gastosSumador - restar
     dinero = dinero + restar
