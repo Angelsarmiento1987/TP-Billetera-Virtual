@@ -226,6 +226,35 @@ header{
 .contDisponible{
     text-align: center;
 }
+
+/*seccion CSS cambios importantes responsive sobre contenedores Gastos!*/
+.contGastosRealizados{
+    background-color: transparent;
+    border: 1px solid silver;
+}
+.divGastos{
+width: 90%;
+
+
+}
+.gasto{
+    display: flex;
+    justify-content: space-evenly;
+background-color: #1B1C1E;
+
+border: 0px solid;
+border-radius: 10px;
+height: 30%;
+padding-top: 3%;
+padding-bottom: 3%;
+margin-top: 1%;
+margin-bottom: 1%;
+
+
+
+
+
+}
 .contGastos{
     display: none;
 }
@@ -247,6 +276,8 @@ header{
         width: 95%;
         height: 50vh;
         border-radius: 20px;
+        background-color: transparent;
+        border: 1px solid silver;
     }
     .contGastosRealizados{
         margin-top: 1rem;
