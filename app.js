@@ -28,6 +28,7 @@ function haceClick(){/*genere la funcion q disparon con el evento onclick en la 
 /*FUNCION AGREGAR DINERO*/ 
 
 function agregarDinero(){
+    if(dinero > 0 || sumX>1){
 let idInputGasto = document.getElementById("idInputGasto").value;
 let idInputMonto = document.getElementById("idInputMonto").value;
 gasto = idInputGasto
@@ -52,6 +53,10 @@ document.getElementById("idInputGasto").value = `` /*de esta forma retorno el va
 document.getElementById("idInputMonto").value = ``
 
 sumX = sumX + 1 //sumador para incremento y recorrido de los divs
+    }
+    else{
+        alert("Ingrese dinero a su cuenta para empezar a calcular sus gastos!!")
+    }
 
 }
 
@@ -65,7 +70,13 @@ function eliminarDIV(a){/*"a" recibe el valor de sumX enviado por onClick */
     gastosSumador = gastosSumador - restar
     dinero = dinero + restar
     disponible.innerText=`$${dinero}`
-    totalGastos.innerText = `$${gastosSumador}` /*las operaciones con los valores las realizo antes de ejecutar la eliminacion del contenedor en esta funcion, ya que si el codigo estuviera despues lo tomaria como NULL*/
+    totalGastos.innerText = `$${gastosSumador}`
+    
+    if(dinero>=0){
+        disponible.style.color = `green`
+    }
+
+    /*las operaciones con los valores las realizo antes de ejecutar la eliminacion del contenedor en esta funcion, ya que si el codigo estuviera despues lo tomaria como NULL*/
 
 
 
