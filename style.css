@@ -226,7 +226,7 @@ header{
 .contDisponible{
     text-align: center;
 }
-
+/*falta agregar seccion variables del header debajo*/
 /*seccion CSS cambios importantes responsive sobre contenedores Gastos!*/
 .contGastosRealizados{
     background-color: transparent;
