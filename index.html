@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
+<body id="body">
+    <header id="headerStyle">
         <div class="contHeader">
             <div class="contIngreso">
                 <p>Total Ingreso:</p>
@@ -31,7 +31,9 @@
     </header>
     <section class="hero">
         <div class="contHero">
-            <div class="contBilletera">
+            
+            <div class="contBilletera" id="billeteraStyle">
+                <div class="onOff"><a href="#" id="idDarkMode" onclick="onOffMode()"><i class="fa-solid fa-toggle-off light"></i></a></div>
                 <h2>Billetera App</h2>
                 <div class="contFormu">
                     <form action="">
@@ -55,7 +57,7 @@
                 
 
             </div>
-            <div class="contGastosRealizados" id="divGastosRealizados">
+            <div class="contGastosRealizados"  id="gastoMontoStyle">
                 <h2 >Gastos</h2>
                 <!-- en esta seccion se imprimen los gastos realizados-->
                 <div class="divGastos" id="idDivGastos">
@@ -71,7 +73,7 @@
 
         </div>
     </section>
-    <footer class="footResponsive">
+    <footer class="footResponsive" id="idFootResponsive">
         <div class="contFoot">
             <div class="footIngresos">
                 <p>Total Ingreso</p>

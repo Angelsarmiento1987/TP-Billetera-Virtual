@@ -59,6 +59,15 @@ header{
 .contBilletera h2{
     font-size: 3rem;
 }
+.onOff{
+    
+    width: 80%;
+
+}
+.light{
+    font-size: 2rem;
+    color:#C5FC6B;
+}
 
 /* CSS FORMULARIO SECTION BILLETERA*/
 

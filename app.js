@@ -5,6 +5,12 @@ let idFootIngresos = document.getElementById("idFootIngresos")
 let idFootGastos = document.getElementById("idFootGastos")
 let totalGastos = document.getElementById("totalGastos")
 let idDivGastos = document.getElementById("idDivGastos")
+let idDarkMode = document.getElementById("idDarkMode")
+let body = document.getElementById("body")
+let billeteraStyle = document.getElementById("billeteraStyle")
+let gastoMontoStyle =  document.getElementById("gastoMontoStyle")
+let headerStyle = document.getElementById("headerStyle")
+let idFootResponsive = document.getElementById("idFootResponsive")
 
 
 
@@ -15,6 +21,7 @@ let gastosSumador = 0
 let sumX = 1
 let restarString = ``
 let restar = 0
+let darkSum = 0
 
 
 
@@ -91,14 +98,43 @@ function eliminarDIV(a){/*"a" recibe el valor de sumX enviado por onClick */
 
 
 
-    
-
-
-
-
 /*con esta funcion guardo en variable el ID idItemGasto(con su respectivo indice que se lo da sumX para lograr identificar por separado cada div ) y el evento haceClik activa la funcion elimiinarDIV(aqui manda la variable sumX guardada para saber luego a que indice corresponde)*/
 
+}
 
+function onOffMode(){
+    if(darkSum == 0){
+    console.log("la funcion onOffMode funca")
+    idDarkMode.innerHTML = `<i class="fa-solid fa-toggle-on light"></i>`
+   
+    body.style.backgroundColor="#f8efc4"
+    billeteraStyle.style.backgroundColor = "#e4b987"
+    gastoMontoStyle.style.backgroundColor = "#e4b987"
+    headerStyle.style.backgroundColor = "#c8825b"
+   idInputDinero.style.backgroundColor="#f8efec"
+   idInputGasto.style.backgroundColor="#f8efec"
+   idInputMonto.style.backgroundColor ="#f8efec"
+   idFootResponsive.style.backgroundColor = "#c8825b"
+   idInputDinero.style.color = "black"
+     
+   
+darkSum = darkSum + 1
 
+    }
+    else if(darkSum == 1){
 
+        idDarkMode.innerHTML = `<i class="fa-solid fa-toggle-off light"></i>`
+        body.style.backgroundColor=" #0D0E0F"
+        billeteraStyle.style.backgroundColor = "#131415"
+        gastoMontoStyle.style.backgroundColor ="#131415"
+        headerStyle.style.backgroundColor = "#C5FC6B"
+        idInputDinero.style.backgroundColor="#1B1C1E"
+        idInputGasto.style.backgroundColor="#1B1C1E"
+        idInputMonto.style.backgroundColor ="#1B1C1E"
+        idFootResponsive.style.backgroundColor = " #C5FC6B"
+        idInputDinero.style.color = "white"
+
+        darkSum = darkSum - 1
+    }
+    
 }
