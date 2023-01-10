@@ -85,6 +85,7 @@ header{
     text-align: center;
     font-size: 1.5rem;
     
+    
   
     
 }
@@ -296,12 +297,18 @@ margin-bottom: 1%;
    
     .inputDinero{
         height: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     .inputGasto{
         height: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     .inputMonto{
         height: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
 
