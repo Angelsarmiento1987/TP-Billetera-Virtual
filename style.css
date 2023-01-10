@@ -243,6 +243,9 @@ width: 90%;
 
 
 }
+.contGastoyMonto{
+   
+}
 .gasto{
     display: flex;
     justify-content: space-evenly;
@@ -287,9 +290,7 @@ margin-bottom: 1%;
         background-color: transparent;
         border: 1px solid silver;
     }
-   .contFormu{
-    height: auto;
-   }
+   
     .contGastosRealizados{
         margin-top: 1rem;
         width: 95%;
@@ -305,13 +306,11 @@ margin-bottom: 1%;
     }
     .inputGasto{
         height: 2rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+       
     }
     .inputMonto{
         height: 2rem;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+       
     }
 
 
