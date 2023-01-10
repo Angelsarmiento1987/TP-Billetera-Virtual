@@ -243,9 +243,14 @@ width: 90%;
 
 
 }
-.contGastoyMonto{
-   
+.contFormu{ 
+    display: flex;
+    align-items: center;
 }
+.contGastoyMonto{
+    margin-top: 10%;
+}
+
 .gasto{
     display: flex;
     justify-content: space-evenly;
@@ -306,10 +311,14 @@ margin-bottom: 1%;
     }
     .inputGasto{
         height: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
        
     }
     .inputMonto{
         height: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
        
     }
 
