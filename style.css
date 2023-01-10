@@ -204,6 +204,11 @@ header{
     color: red;
 }
 
+/*SECCION FOOTER*/
+.footResponsive{
+    display: none;
+}
+
 /* CSS RESPONSIVE*/
 
 @media(max-width:1025px){
@@ -263,6 +268,8 @@ margin-bottom: 1%;
     }
 
 
+
+
 /*Responsive contenedores Billetera y Gastos*/
 
     .contHero{
@@ -298,9 +305,22 @@ margin-bottom: 1%;
     }
 
 
-
-
-
+/*footer responsive*/
+.footResponsive{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C5FC6B;
+    margin: 0.5rem;
+    border-radius: 20px;
+    position: sticky;
+    bottom: 0px;
+}
+.contFoot{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
 }
 
 /*Responsive Horizontal*/

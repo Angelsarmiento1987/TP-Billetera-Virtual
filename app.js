@@ -1,6 +1,8 @@
 /*asignacion de Variables header*/ 
 let disponible = document.getElementById("disponible")
 let totalIngresos = document.getElementById("totalIngresos")
+let idFootIngresos = document.getElementById("idFootIngresos")
+let idFootGastos = document.getElementById("idFootGastos")
 let totalGastos = document.getElementById("totalGastos")
 let idDivGastos = document.getElementById("idDivGastos")
 
@@ -23,6 +25,7 @@ function haceClick(){/*genere la funcion q disparon con el evento onclick en la 
   
     disponible.innerText=`$${dinero}`
     totalIngresos.innerText = `$${dinero}`
+    idFootIngresos.innerText = `$${dinero}`
 }
 
 /*FUNCION AGREGAR DINERO*/ 
@@ -37,6 +40,7 @@ dinero = dinero - monto
 gastosSumador = gastosSumador + monto
 disponible.innerText=`$${dinero}`
 totalGastos.innerText = `$${gastosSumador}`
+idFootGastos.innerText = `$${gastosSumador}`
 if(dinero<0){
 disponible.style.color = `red`
 }
@@ -71,6 +75,7 @@ function eliminarDIV(a){/*"a" recibe el valor de sumX enviado por onClick */
     dinero = dinero + restar
     disponible.innerText=`$${dinero}`
     totalGastos.innerText = `$${gastosSumador}`
+    idFootGastos.innerText = `$${gastosSumador}`
     
     if(dinero>=0){
         disponible.style.color = `green`
