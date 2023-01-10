@@ -287,6 +287,9 @@ margin-bottom: 1%;
         background-color: transparent;
         border: 1px solid silver;
     }
+   .contFormu{
+    overflow-y: auto;
+   }
     .contGastosRealizados{
         margin-top: 1rem;
         width: 95%;
