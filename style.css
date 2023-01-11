@@ -66,7 +66,13 @@ header{
 }
 .light{
     font-size: 2rem;
+    color: #b55b52;
+    
+}
+.dark{
+    font-size: 2rem;
     color:#C5FC6B;
+
 }
 
 /* CSS FORMULARIO SECTION BILLETERA*/
@@ -136,6 +142,7 @@ header{
     color: green;
     
 }
+
 .iconoDinero{
     color: #C5FC6B;
     font-size: 2rem;
