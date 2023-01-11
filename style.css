@@ -1,3 +1,10 @@
+:root{
+    --colorPlaceholder: #C5FC6B; 
+    --colorHover: green;
+
+
+}
+
 *{
     margin: 0px;
     font-family: Acme;
@@ -139,27 +146,28 @@ header{
     font-size: 2rem;
 }
 .iconoAgregar:hover{
-    color: green;
+    color: var(--colorHover);
     
 }
+
 
 .iconoDinero{
     color: #C5FC6B;
     font-size: 2rem;
 }
 .iconoDinero:hover{
-    color: green;
+    color: var(--colorHover)
 }
 
 
 /*seccion Billetera CSS efectos FOCUS */
 :focus{ /* uso Focus para cambiar el color del borde de los imputs al estar seleccionado*/
-  outline: 1px solid #C5FC6B; 
+  outline: 1px solid var(--colorPlaceholder);
   
   
 }
 :focus::placeholder{ /*iluminacion del placeholder al hacer focus*/
-    color: #C5FC6B;
+    color: var(--colorPlaceholder);
 }
 ::placeholder{
    padding-left: 0px;
