@@ -1,6 +1,10 @@
 :root{
     --colorPlaceholder: #C5FC6B; 
     --colorHover: green;
+    --contColorResponsive: #1B1C1E;
+    --colorIconos: #C5FC6B; 
+    --lineaDiv: silver;
+    --txtColor: white;
 
 
 }
@@ -53,7 +57,7 @@ header{
 }
 .contBilletera{
     background-color: #131415;
-    color: white;
+    color: var(--txtColor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,7 +146,7 @@ header{
     
 }
 .iconoAgregar{
-    color: #C5FC6B;
+    color: var(--colorIconos);
     font-size: 2rem;
 }
 .iconoAgregar:hover{
@@ -152,11 +156,11 @@ header{
 
 
 .iconoDinero{
-    color: #C5FC6B;
+    color: var(--colorIconos);
     font-size: 2rem;
 }
 .iconoDinero:hover{
-    color: var(--colorHover)
+    color: var(--colorHover);
 }
 
 
@@ -178,7 +182,7 @@ header{
 
 .contGastosRealizados{
     background-color: #131415;
-    color: white;
+    color: var(--txtColor);
     display: flex;
     justify-content: center;
    align-items: center;
@@ -212,7 +216,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid silver;
+    border-bottom: 1px solid var(--lineaDiv);
+    color: var(--txtColor);
     
     
 }
@@ -223,7 +228,7 @@ header{
 
 
 .iconoEliminar{
-    color: #C5FC6B;
+    color: var(--colorIconos);
 }
 .iconoEliminar:hover{
     color: red;
@@ -279,7 +284,7 @@ width: 90%;
 .gasto{
     display: flex;
     justify-content: space-evenly;
-background-color: #1B1C1E;
+background-color: var(--contColorResponsive);
 
 border: 0px solid;
 border-radius: 10px;

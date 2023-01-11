@@ -121,9 +121,13 @@ function onOffMode(){
    idInputMonto.style.backgroundColor ="#f8efec"
    idFootResponsive.style.backgroundColor = "#c8825b"
    idInputDinero.style.color = "black"
-   idStyleIconoAgregar.style.color = "#b55b52" 
-   idStyleIconoDinero.style.color = "#b55b52" 
+   idInputGasto.style.color="black"
+   idInputMonto.style.color = "black"
+   document.documentElement.style.setProperty(`--colorIconos`, `#b55b52`)
    document.documentElement.style.setProperty(`--colorPlaceholder`, `#b55b52`) //de esta forma coloco el color al placeholder al cambiar de modo a claro, y para eso le coloque una variable para el color en el root del style(directamente realizo el cambio de color sobre la variable colorPlaceholder creada en el CSS)
+   document.documentElement.style.setProperty(`--contColorResponsive`, `#c8825b`)
+   document.documentElement.style.setProperty(`--lineaDiv`, `#b55b52`)
+   document.documentElement.style.setProperty(`--txtColor`, `#b55b52`)
   
    
    
@@ -145,9 +149,14 @@ darkSum = darkSum + 1
         idInputMonto.style.backgroundColor ="#1B1C1E"
         idFootResponsive.style.backgroundColor = "#C5FC6B"
         idInputDinero.style.color = "white"
-        idStyleIconoAgregar.style.color = "#C5FC6B"
-        idStyleIconoDinero.style.color = "#C5FC6B" 
+        idInputGasto.style.color="white"
+        idInputMonto.style.color = "white"
+        
         document.documentElement.style.setProperty(`--colorPlaceholder`, `#C5FC6B`)
+        document.documentElement.style.setProperty(`--contColorResponsive`, `#1B1C1E`)
+        document.documentElement.style.setProperty(`--colorIconos`, `#C5FC6B`)
+        document.documentElement.style.setProperty(`--lineaDiv`, `silver`)
+        document.documentElement.style.setProperty(`--txtColor`, `white`)
 
         darkSum = darkSum - 1
     }
