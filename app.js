@@ -1,4 +1,4 @@
-/*asignacion de Variables header*/ 
+/*asignacion de Variables */ 
 let disponible = document.getElementById("disponible")
 let totalIngresos = document.getElementById("totalIngresos")
 let idFootIngresos = document.getElementById("idFootIngresos")
@@ -13,7 +13,7 @@ let headerStyle = document.getElementById("headerStyle")
 let idFootResponsive = document.getElementById("idFootResponsive")
 let idStyleIconoDinero = document.getElementById("idStyleIconoDinero")
 let idStyleIconoAgregar = document.getElementById("idStyleIconoAgregar")
-let placeholderInputDinero = window.getComputedStyle(document.getElementById(`idInputDinero`, `::placeholder`))
+
 
 
 

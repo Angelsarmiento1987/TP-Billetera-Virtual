@@ -115,6 +115,12 @@ header{
   
     
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+} /*con este codigo desactivo las flechas del input number*/
+
 .contGastoyMonto{
     margin-top: 5rem;
     display: flex;
