@@ -36,6 +36,8 @@ function haceClick(){/*genere la funcion q disparon con el evento onclick en la 
     disponible.innerText=`$${dinero}`
     totalIngresos.innerText = `$${dinero}`
     idFootIngresos.innerText = `$${dinero}`
+   
+    
 }
 
 /*FUNCION AGREGAR DINERO*/ 

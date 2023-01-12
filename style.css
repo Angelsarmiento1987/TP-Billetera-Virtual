@@ -36,7 +36,20 @@ header{
 .h1Disponible{
     color: green;/*tiene q cambiar a rojo cuando el saldo disponible sea negativo ver si eso se hace con java script*/
     text-shadow: 1px 1px #0D0E0F; /*SOMBRA SOBRE DINERO DISPONIBLE VER SI LO DEJO O NO*/
+    animation-name: izq;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
+@keyframes izq{
+    0%{
+        transform: rotateX(360deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}
+
 
 /*CSS seccion Hero (billetera + gastos)*/
 .hero{
@@ -73,17 +86,30 @@ header{
 .onOff{
     
     width: 80%;
+    
 
 }
+
 .light{
     font-size: 2rem;
     color: #b55b52;
+    transition: 0.5s;
     
 }
+.light:hover{
+    transform: scale(1.5);
+    
+
+}
+
 .dark{
     font-size: 2rem;
     color:#C5FC6B;
-
+    transition: 0.5s;
+}
+.dark:hover{
+    transform: scale(1.5);
+  
 }
 
 /* CSS FORMULARIO SECTION BILLETERA*/
@@ -154,9 +180,11 @@ input[type=number]::-webkit-outer-spin-button {
 .iconoAgregar{
     color: var(--colorIconos);
     font-size: 2rem;
+    transition: 0.5s;
 }
 .iconoAgregar:hover{
     color: var(--colorHover);
+    transform: scale(1.5);
     
 }
 
@@ -164,14 +192,16 @@ input[type=number]::-webkit-outer-spin-button {
 .iconoDinero{
     color: var(--colorIconos);
     font-size: 2rem;
+    transition: 0.5s;
 }
 .iconoDinero:hover{
     color: var(--colorHover);
+    transform: scale(1.5);
 }
 
 
 /*seccion Billetera CSS efectos FOCUS */
-:focus{ /* uso Focus para cambiar el color del borde de los imputs al estar seleccionado*/
+:focus{ /* uso Focus para cambiar el color del borde de los inputs al estar seleccionado*/
   outline: 1px solid var(--colorPlaceholder);
   
   
@@ -200,6 +230,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 .divGastos{
+    padding: 0.5rem;
+    
 
     width: 80%;
     height:50% ;
@@ -235,9 +267,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 .iconoEliminar{
     color: var(--colorIconos);
+    transition: 0.5s;
 }
 .iconoEliminar:hover{
     color: red;
+    transform: scale(1.5) rotate(380deg) ;
+    
+    
 }
 
 /*SECCION FOOTER*/
@@ -267,8 +303,7 @@ input[type=number]::-webkit-outer-spin-button {
 .contDisponible{
     text-align: center;
 }
-/*falta agregar seccion variables del header debajo*/
-/*seccion CSS cambios importantes responsive sobre contenedores Gastos!*/
+
 .contGastosRealizados{
     background-color: transparent;
     border: 1px solid silver;
