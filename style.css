@@ -419,8 +419,9 @@ margin-bottom: 1%;
     .contBilletera{
         margin-top: 0.5rem;
         width: 95%;
-        height: 50vh;
+        height: 70vh;
         border-radius: 20px;
+        display: flex;
         
     }
     .contGastoyMonto{
@@ -454,7 +455,11 @@ margin-bottom: 1%;
         height: 0.4rem;
     }
 
-
+    .onOff{
+        display: flex;
+    height: 0.5%;
+       
+    }
 
 
 
