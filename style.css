@@ -38,8 +38,8 @@ header{
     text-shadow: 1px 1px #0D0E0F; /*SOMBRA SOBRE DINERO DISPONIBLE VER SI LO DEJO O NO*/
     animation-name: izq;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
-  animation-direction: alternate;
+    animation-iteration-count: infinite; /*defino la cantidad de veces que quiero que se repita la animacion*/
+  animation-direction: alternate;/*defino que la animacion sea alternada*/
 }
 @keyframes izq{
     0%{
@@ -184,7 +184,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 .iconoAgregar:hover{
     color: var(--colorHover);
-    transform: scale(1.5);
+    transform:scale(1.5) rotate(360deg);
     
 }
 
@@ -195,7 +195,7 @@ input[type=number]::-webkit-outer-spin-button {
     transition: 0.5s;
 }
 .iconoDinero:hover{
-    color: var(--colorHover);
+   color: var(--colorHover);
     transform: scale(1.5);
 }
 
@@ -280,6 +280,8 @@ input[type=number]::-webkit-outer-spin-button {
 .footResponsive{
     display: none;
 }
+
+
 
 /* CSS RESPONSIVE*/
 
@@ -392,7 +394,12 @@ margin-bottom: 1%;
         padding-bottom: 1rem;
        
     }
-
+.iconoAgregar{
+    pointer-events: none; /*desactivo el efecto hover para responsive*/
+}
+.iconoDinero{
+    pointer-events: none;
+}
 
 /*footer responsive*/
 .footResponsive{
@@ -496,6 +503,11 @@ margin-bottom: 1%;
        
     }
 
-
+    .iconoAgregar{
+        pointer-events: none;
+    }
+    .iconoDinero{
+        pointer-events: none;
+    }
 
 }
